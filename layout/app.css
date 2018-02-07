@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(26, 26, 26); 
+    text-decoration: none;  
+    transition: 0.5s;
+}
+
+svg{
+    max-width: 100px;
+}
+.todos{
+    max-width: 600px;
+    margin: 100px auto;
+    border: 1px solid rgb(27, 27, 27);
+    padding: 15px;
+    border-radius: 5px;
+}
+.todos-head,
+.todos-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 15px;
+}
+.todos-head{
+    border-bottom: 1px solid #333;
+}
+.todos-title{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 21px;
+    position: relative;
+}
+.todos-change-tools{
+    width: 200px;
+    
+}
+.change-title-btn{
+    width: 20px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+.task{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #333;
+    padding: 0 0 15px 15px;
+}
+.task:last-child{
+    border-bottom: none;
+}
+.task-name{
+    max-width: 80%;
+    width: 100%;
+}
+.task-tools{
+    display: flex;
+    width: 15%;
+    max-width: 200px;
+}
+.task-complete,
+.task-change,
+.task-delete{
+    width: 30%;
+    margin: auto;
+    height: 30px;
+}
+.task-complete:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.task-change:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.change-title-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.task-delete:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.task-option{
+    margin: 10px 0 10px 0;
+    max-width: 200px;
+}
+.task-option-input{
+    margin: 0 0 10px 0;
+}
